@@ -15,7 +15,7 @@ html{
 }
 
 .container{
-  @apply max-w-[1200px]  mx-auto px-2 
+  @apply max-w-[1200px]  mx-auto px-2 py-20
 }
 body::-webkit-scrollbar {
   width: 11px;

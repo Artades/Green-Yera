@@ -2,22 +2,21 @@ import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import hero from "../../public/images/home/hero.png";
-import loader from "../../public/images/loader/loader.gif";
+import imageLoader from "@/imageLoader";
+
 
 const Hero = () => {
 	return (
 		<div className="relative h-[100vh] lg:h-[56vw] ]">
-			{/* <img
-				className="w-full h-full  object-cover brightness-[55%] transition duration-500 "
-				src="./images/home/hero.png"
-				alt="Hero"
-			/> */}
+		
 			<Image
 				src={hero}
 				alt={"Hero"}
 				className="w-full h-full  object-cover brightness-[65%] transition duration-500 "
-				quality={80}
+				quality={100}
 				loading="lazy"
+				loader={imageLoader}
+				placeholder="blur"
 			/>
 
 			<div className=" absolute top-[30%] flex flex-col items-center justify-start w-full">

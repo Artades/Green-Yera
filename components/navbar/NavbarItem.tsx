@@ -19,7 +19,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({
 				className={
 					active
 						? "text-emerald-500 cursor-default"
-						: "text-gray-200 hover:text-gray-500 cursor-pointer transition"
+						: "text-gray-400 hover:text-emerald-700 cursor-pointer transition"
 				}
 			>
 				{label}

@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <>
      <MetaHead title={'Главная'} />
-     <Navbar />
      <Hero />
      <Main />
     </>
