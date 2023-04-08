@@ -1,14 +1,25 @@
 import React from "react";
 import Button from "./Button";
+import Image from "next/image";
+import hero from "../../public/images/home/hero.png";
+import loader from "../../public/images/loader/loader.gif";
 
 const Hero = () => {
 	return (
 		<div className="relative h-[100vh] lg:h-[56vw] ]">
-			<img
+			{/* <img
 				className="w-full h-full  object-cover brightness-[55%] transition duration-500 "
 				src="./images/home/hero.png"
-				alt=""
+				alt="Hero"
+			/> */}
+			<Image
+				src={hero}
+				alt={"Hero"}
+				className="w-full h-full  object-cover brightness-[65%] transition duration-500 "
+				quality={80}
+				loading="lazy"
 			/>
+
 			<div className=" absolute top-[30%] flex flex-col items-center justify-start w-full">
 				<p className="text-white text-center text-3xl md:text-5xl h-full w-[80%] lg:text-6xl lg:w-[60%] font-bold drop-shadow-xl ">
 					Откройте для себя силу микрозелени с{" "}
