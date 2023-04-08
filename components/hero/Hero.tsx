@@ -13,7 +13,6 @@ const Hero = () => {
 				src={hero}
 				alt={"Hero"}
 				className="w-full h-full  object-cover brightness-[66%] transition duration-500 "
-				quality={60}
 				loading="lazy"
 				loader={imageLoader}
 				placeholder="blur"

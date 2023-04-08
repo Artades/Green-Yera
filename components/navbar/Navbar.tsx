@@ -46,11 +46,13 @@ const Navbar = () => {
 						label="Главная"
 						active={pathname === "/" ? true : false}
 					/>
+					|
 					<NavbarItem
 						href="/catalog"
 						label="Каталог"
 						active={pathname === "/catalog" ? true : false}
 					/>
+					|
 					<NavbarItem
 						href="/contacts"
 						label="Контакты"
@@ -65,10 +67,10 @@ const Navbar = () => {
 						className={`w-7 h-7  transition ${
 							showMobileMenu
 								? "rotate-180 text-emerald-600"
-								: "rotate-0 text-white"
+								: "rotate-0 text-neutral-400"
 						}`}
 					/>
-					<MobileMenu visible={showMobileMenu} />
+					<MobileMenu  pathname={pathname} visible={showMobileMenu} />
 				</div>
 			</div>
 		</nav>
