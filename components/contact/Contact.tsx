@@ -18,7 +18,7 @@ const Contact = () => {
 	const links = [
 		{
 			id: 1,
-			path: "https://instagram.com",
+			path: "https://instagram.com/green_yera?igshid=ZDdkNTZiNTM=",
 			ico: "./images/contacts/instagram.png",
 		},
 		{
