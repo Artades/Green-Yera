@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	HiOutlineHome,
 	HiOutlinePhone,
@@ -13,13 +13,27 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ visible, pathname }) => {
+	useEffect(() => {
+		// Disable scrolling when the menu is opened
+		if (visible) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+
+		// Re-enable scrolling when the component unmounts
+		return () => {
+			document.body.style.overflow = "auto";
+		};
+	}, [visible]);
+
 	if (!visible) {
 		return null;
 	}
 
 	return (
 		<div
-			className="fixed top-0 left-0 w-screen h-screen bg-gray-800 backdrop-blur-md bg-opacity-60 flex justify-center items-center"
+			className="fixed overflow-hidden top-0 left-0 w-screen h-screen bg-gray-800 backdrop-blur-md bg-opacity-60 flex justify-center items-center"
 			style={{ zIndex: 9999 }}
 		>
 			<div className="w-full py-5 flex-col flex items-center">
