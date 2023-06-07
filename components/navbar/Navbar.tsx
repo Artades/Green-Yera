@@ -40,7 +40,7 @@ const Navbar = () => {
 				}`}
 			>
 				<Logo />
-				<div className="flex-row ml-8 gap-7 hidden lg:flex">
+				<div className="flex-row ml-8 gap-7 hidden lg:flex text-slate-500 font-semibold">
 					<NavbarItem
 						href="/"
 						label="Главная"

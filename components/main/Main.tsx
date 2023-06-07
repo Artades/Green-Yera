@@ -33,7 +33,7 @@ const Main = () => {
 						В чем польза и преемущества микрозелени?
 					</p>
 					<hr className="w-full bg-neutral-400 rounded-md my-5" />
-					<ul className="w-full list-none flex flex-col items-center">
+					<ul className="w-full list-none flex flex-col items-center leading-7">
 						<li className="text-xl text-slate-700 mb-4">
 							<span className="underline decoration-emerald-500 decoration-wavy">
 								Высокое содержание питательных веществ
@@ -56,8 +56,7 @@ const Main = () => {
 							</span>
 							: Некоторые исследования показывают, что микрогрины могут
 							оказывать противовоспалительное, противоопухолевое и другие
-							укрепляющие здоровье эффекты, хотя для полного понимания этих
-							потенциальных преимуществ необходимы дополнительные исследования.
+							укрепляющие здоровье эффекты.
 						</li>
 					</ul>
 				</article>
@@ -67,19 +66,19 @@ const Main = () => {
 						Так вот почему же все таки стоит купить микрозелень:
 					</p>
 					<hr className="w-full bg-neutral-400 rounded-md my-5" />
-					<ul className="w-full list-none flex flex-col items-center">
-						<li className="text-xl text-slate-700 mb-4">
-							<span className="underline decoration-slate-500 decoration-dashed">
+					<ul className="w-full list-none flex flex-col items-center leading-7">
+						<li className="text-xl text-slate-700 mb-4 ">
+							<span className="underline decoration-emerald-500 decoration-dashed">
 								Питательная ценность
 							</span>
 							: Микрозелени - это молодые растения, которые собирают, когда они
-							достигают всего нескольких дюймов в высоту. Несмотря на их
+							достигают всего нескольких сантиметров в высоту. Несмотря на их
 							небольшой размер, они богаты питательными веществами и, как было
 							обнаружено, содержат более высокий уровень витаминов и минералов,
 							чем их зрелые аналоги.
 						</li>
 						<li className="text-xl text-slate-700 mb-4">
-							<span className="underline decoration-slate-500  decoration-dashed">
+							<span className="underline decoration-emerald-500  decoration-dashed">
 								Уникальность
 							</span>
 							: Микрозелен бывают самых разных вкусов и цветов и могут быть
@@ -87,28 +86,28 @@ const Main = () => {
 							ингредиента.
 						</li>
 						<li className="text-xl text-slate-700 mb-4">
-							<span className="underline decoration-slate-500   decoration-dashed">
-								Удобство:
+							<span className="underline decoration-emerald-500   decoration-dashed">
+								Удобство
 							</span>
-							:Микрозеленые растения легко выращивать в домашних условиях, а это
-							значит, что вы всегда можете иметь под рукой свежие запасы, когда
-							они вам понадобятся. Их также можно приобрести во многих
+							: Микрозеленые растения легко выращивать в домашних условиях, а
+							это значит, что вы всегда можете иметь под рукой свежие запасы,
+							когда они вам понадобятся. Их также можно приобрести во многих
 							продуктовых магазинах и на фермерских рынках.
 						</li>
 						<li className="text-xl text-slate-700 mb-4">
-							<span className="underline decoration-slate-500   decoration-dashed">
+							<span className="underline decoration-emerald-500   decoration-dashed">
 								Экологичность
 							</span>
-							:Микрозелени являются устойчивым источником продовольствия,
+							: Микрозелени являются устойчивым источником продовольствия,
 							поскольку для их выращивания требуется меньше воды и места, чем
 							для традиционных культур. Их также можно выращивать круглый год,
 							что делает их надежным источником свежих продуктов.
 						</li>
 						<li className="text-xl text-slate-700 mb-4">
-							<span className="underline decoration-slate-500   decoration-dashed">
+							<span className="underline decoration-emerald-500   decoration-dashed">
 								Польза для здоровья
 							</span>
-							:Употребление микрогринов связано с целым рядом преимуществ для
+							: Употребление микрогринов связано с целым рядом преимуществ для
 							здоровья, включая улучшение пищеварения, уменьшение воспаления и
 							снижение риска хронических заболеваний, таких как болезни сердца и
 							рак.

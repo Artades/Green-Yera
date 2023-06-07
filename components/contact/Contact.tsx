@@ -5,7 +5,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import { BsCheckLg } from "react-icons/bs";
 
 const Contact = () => {
-	const number = "+7-(707)-926-66-85";
+	const number = "+7-(777)-926-66-85";
 	const [isCopied, setIsCopied] = useState(false);
 
 	const copyNumber = () => {

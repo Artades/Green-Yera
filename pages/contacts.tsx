@@ -1,4 +1,5 @@
 import Contact from "@/components/contact/Contact";
+
 import MetaHead from "@/meta/MetaHead";
 import React from "react";
 
@@ -8,9 +9,11 @@ const Contacts = () => {
 			<MetaHead title={"Контакты"} />
 			<div className="w-full h-[100vh]">
 				<div className="container">
-                   <Contact />
-                </div>
+					<Contact />
+				</div>
+				
 			</div>
+			
 		</>
 	);
 };
