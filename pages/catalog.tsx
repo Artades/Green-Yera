@@ -23,7 +23,7 @@ const Catalog:NextPage<ItemsProps> = ({ items }) => {
 
 export const getServerSideProps = async () => {
 	try {
-		const response = await fetch("http://localhost:3000/api/items"); 
+		const response = await fetch("https://green-yera.vercel.app/api/items"); 
 		const items = await response.json(); 
 
 		return {
