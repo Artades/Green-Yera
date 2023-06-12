@@ -1,42 +1,41 @@
-import CatalogColumn from "@/components/catalog/CatalogColumn";
-import { ItemProps } from "@/interfaces/item.interface";
-import MetaHead from "@/meta/MetaHead";
 import { NextPage } from "next";
-import React from "react";
+import { useQuery} from "react-query";
+import axios from "axios";
+import CatalogColumn from "@/components/catalog/CatalogColumn";
+import MetaHead from "@/meta/MetaHead";
+import { ItemProps } from "@/interfaces/item.interface";
 
 interface ItemsProps {
 	items: ItemProps[];
 }
 
-const Catalog:NextPage<ItemsProps> = ({ items }) => {
+const Catalog: NextPage<ItemsProps> = ({ items }) => {
+	
+
+	const { data: fetchedItems, isLoading } = useQuery("items", async () => {
+		const response = await axios.get("https://green-yera.vercel.app/api/items");
+		return response.data;
+	});
+
+	const catalogItems = items || fetchedItems;
+
 	return (
 		<>
 			<MetaHead title={"Каталог"} />
 			<div className="w-full">
 				<div className="container">
-					<CatalogColumn items={items} />
+					{isLoading ? (
+						<div className="w-full h-screen bg-white flex items-center justify-center">
+							<p className="text-green-500 font-bold text-xl">Loading...</p>
+						</div>
+					) : (
+						<CatalogColumn items={catalogItems} />
+					)}
 				</div>
 			</div>
 		</>
 	);
 };
 
-export const getServerSideProps = async () => {
-	try {
-		const response = await fetch("https://green-yera.vercel.app/api/items"); 
-		const items = await response.json(); 
-
-		return {
-			props: {
-				items,
-			},
-		};
-	} catch (err) {
-		console.log(err);
-		return {
-			props: { items: [] },
-		};
-	}
-};
 
 export default Catalog;
