@@ -4,6 +4,7 @@ import axios from "axios";
 import CatalogColumn from "@/components/catalog/CatalogColumn";
 import MetaHead from "@/meta/MetaHead";
 import { ItemProps } from "@/interfaces/item.interface";
+import { FadeLoader } from "react-spinners";
 
 interface ItemsProps {
 	items: ItemProps[];
@@ -25,8 +26,9 @@ const Catalog: NextPage<ItemsProps> = ({ items }) => {
 			<div className="w-full">
 				<div className="container">
 					{isLoading ? (
-						<div className="w-full h-screen bg-white flex items-center justify-center">
-							<p className="text-green-500 font-bold text-xl">Loading...</p>
+						<div className="w-full h-[79vh] bg-white flex flex-col items-center justify-center">
+							<FadeLoader color="#50C878" />
+							<p className="mt-2 text-emerald-500  text-md">Загружаем товары</p>
 						</div>
 					) : (
 						<CatalogColumn items={catalogItems} />
