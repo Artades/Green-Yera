@@ -33,7 +33,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, pathname }) => {
 
 	return (
 		<div
-			className="fixed overflow-hidden top-0 left-0 w-screen h-screen bg-gray-800 backdrop-blur-md bg-opacity-60 flex justify-center items-center"
+			className="fixed overflow-hidden top-0 left-0 w-screen h-screen bg-gray-800 backdrop-blur-lg bg-opacity-90 flex justify-center items-center"
 			style={{ zIndex: 9999 }}
 		>
 			<div className="w-full py-5 flex-col flex items-center">

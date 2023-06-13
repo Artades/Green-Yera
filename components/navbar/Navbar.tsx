@@ -33,10 +33,12 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<nav className="w-full fixed z-40 ">
+		<nav className="w-full fixed z-40  ">
 			<div
 				className={`px-4 md:px-16 py-6 flex flex-row items-center justify-between transition duration-500 ${
-					showBackground ? "bg-slate-700 backdrop-blur-md bg-opacity-70" : ""
+					showBackground
+						? "bg-slate-700 backdrop-blur-md bg-opacity-70"
+						: ""
 				}`}
 			>
 				<Logo />
@@ -70,7 +72,7 @@ const Navbar = () => {
 								: "rotate-0 text-neutral-400"
 						}`}
 					/>
-					<MobileMenu  pathname={pathname} visible={showMobileMenu} />
+					<MobileMenu pathname={pathname} visible={showMobileMenu} />
 				</div>
 			</div>
 		</nav>
